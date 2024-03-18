@@ -42,9 +42,9 @@ public class PlayerUIScript : MonoBehaviour
     {
         _healthCountTMP.text = num.ToString();
     }
-    public void updateRescuedCivUIText(float num)
+    public void updateRescuedCivUIText(float num, float levelEndCivCount)
     {
-        _rescuedCivilianCountTMP.text = num.ToString();
+        _rescuedCivilianCountTMP.text = num.ToString()+ " / "+ levelEndCivCount.ToString();
     }
 
     private void audioButtonClicked()

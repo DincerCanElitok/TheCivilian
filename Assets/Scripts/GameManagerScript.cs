@@ -17,14 +17,14 @@ public class GameManagerScript : MonoBehaviour
     {
         //DontDestroyOnLoad(gameObject);
         healthPoints = 5;
-        levelEndCivCount = 3;
+        //levelEndCivCount = 3;
     }
 
    
     void FixedUpdate()
     {
         playerUIScript.updateHealthUIText(healthPoints);
-        playerUIScript.updateRescuedCivUIText(rescuedCivCount);
+        playerUIScript.updateRescuedCivUIText(rescuedCivCount, levelEndCivCount);
 
         checkPlayerHealth();
     }
